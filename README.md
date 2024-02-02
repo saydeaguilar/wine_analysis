@@ -1,15 +1,25 @@
-# wine_analysis
+# Wine Challenge Docker Image
 
-The docker image is located in Docker Hub.
+This Docker image provides a pre-configured environment for the Wine Challenge project. Follow the steps below to pull and run the image on a machine with Docker installed.
 
-For using the image is necessary to pull the image and run it in a machine with docker installed.
+## Pull the Docker Image
 
-For pulling the image:
+To pull the Docker image from Docker Hub, use the following command:
 
+```bash
 docker pull saydeaguilar/wine_challenge
 
-For running the image:
+```
+## Run the Docker Image
+Once the image is pulled, run the Docker container with the following command:
 
-docker run saydeaguilar/wine_challenge
+```bash
+docker run -p 8888:8888 saydeaguilar/wine_challenge
+```
+After running the image, the terminal will display a link to access the server, providing access to the Jupyter Notebook.
 
-After running the image the terminal will display the link to access the server and you will be able to see the jupyter notebook.
+Important:
+
+## The host port is set to 8888.
+Feel free to access the provided link and explore the Jupyter Notebook environment.
+
